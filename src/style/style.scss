@@ -1,4 +1,13 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* FONTS */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 /* MY PALETTE */
 
@@ -8,3 +17,23 @@ $my-light-gray: #AAA;
 $my-dark-gray: #494949;
 $my-cyan: #55CCE5;
 $my-blue: #427ED1;
+
+/* ----CLASSI GENERALI ---- */
+
+.my-btn {
+    border: none;
+    background: $my-blue;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.my-btn-transparent {
+    border: 1.5px solid white;
+    background: rgba(250, 250, 250, 0.1);
+    color: white;
+    border-radius: 20px;
+    padding: px 20px;
+    font-size: 0.75rem;
+}
