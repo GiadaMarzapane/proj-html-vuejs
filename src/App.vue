@@ -27,5 +27,5 @@
 </template>
 
 <style lang="scss">
-    @use "./style/style.scss" as *
+    @import "./style/style.scss";
 </style>
