@@ -1,4 +1,5 @@
 import { reactive } from "vue";
 export const store = reactive({
-    mainNav: ['home', 'shop', 'products', 'categories', 'news', 'elements']
+    mainNav: ['home', 'shop', 'products', 'categories', 'news', 'elements'],
+    active: 0
 })
