@@ -10,5 +10,5 @@
     <h1>Header</h1>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 </style>
