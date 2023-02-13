@@ -1,8 +1,13 @@
 <script>
-    
-    export default{
-        name: 'AppHeader'
+import { store } from '../store';
+export default {
+    name: 'AppHeader',
+    data() {
+        return {
+            store
+        }
     }
+}
 
 </script>
 
@@ -23,7 +28,7 @@
                     </a>
                 </div>
                 <div>
-                    <a class="text-decoration-none ps-5 pt-2 pb-2 text-secondary" href="#">
+                    <a class="text-decoration-none ps-5 pt-4 pb-4 text-secondary" href="#">
                         <font-awesome-icon icon="fa-solid fa-cart-shopping" />
                         CART
                         <font-awesome-icon icon="fa-solid fa-chevron-down" />
@@ -32,16 +37,16 @@
             </div>
         </section>
         <section>
-            <div class="container d-flex justify-content-between align-items-center">
+            <div class="container d-flex justify-content-between align-items-center pt-2 pb-2">
                 <div>
-                    <img src="" alt="logo">
+                    <img src="../asset/images/classic_shop_logo1x.png" alt="logo">
                 </div>
                 <div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                                <font-awesome-icon icon="fa-solid fa-chevron-down" />
+                    <ul class="d-flex">
+                        <li v-for="(element, index) in store.mainNav">
+                            <a href="#" class="pe-4 text-capitalize text-decoration-none text-secondary">
+                                {{ element }}
+                                <font-awesome-icon icon="fa-solid fa-chevron-down" v-if="index != 4" />
                             </a>
                         </li>
                     </ul>
@@ -53,11 +58,19 @@
 
 <style lang="scss" scoped>
 
-    a{
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+
+    a {
         font-size: 0.8rem;
     }
-    .fa-chevron-down{
+
+    .fa-chevron-down {
         height: 0.5rem;
         vertical-align: middle;
     }
+
 </style>
