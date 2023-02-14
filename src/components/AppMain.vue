@@ -1,12 +1,14 @@
 <script>
 import AppCollection from './AppCollection.vue';
 import AppMiddleSection from './AppMiddleSection.vue';
+import AppFeaturedProducts from './AppFeaturedProducts.vue';
     
     export default{
         name: 'AppMain',
         components: {
             AppCollection,
-            AppMiddleSection
+            AppMiddleSection,
+            AppFeaturedProducts
         }
     }
 
@@ -18,6 +20,7 @@ import AppMiddleSection from './AppMiddleSection.vue';
     <section>
     </section>
     <!-- COLLECTION -->
+    <AppFeaturedProducts />
     <AppCollection />
     <AppMiddleSection />
 
