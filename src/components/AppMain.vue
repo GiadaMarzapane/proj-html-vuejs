@@ -3,14 +3,18 @@ import AppCollection from './AppCollection.vue';
 import AppMiddleSection from './AppMiddleSection.vue';
 import AppFeaturedProducts from './AppFeaturedProducts.vue';
 import AppBestSeller from './AppBestSeller.vue';
-    
+import AppNewArrivals from './AppNewArrivals.vue';
+import AppOpinions from './AppOpinions.vue';
+
     export default{
         name: 'AppMain',
         components: {
             AppCollection,
             AppMiddleSection,
             AppFeaturedProducts,
-            AppBestSeller
+            AppBestSeller,
+            AppNewArrivals,
+            AppOpinions
         }
     }
 
@@ -20,8 +24,10 @@ import AppBestSeller from './AppBestSeller.vue';
     
     <AppFeaturedProducts />
     <AppCollection />
-    <AppMiddleSection />
     <AppBestSeller />
+    <AppMiddleSection />
+    <AppNewArrivals />
+    <AppOpinions />
 
 </template>
 

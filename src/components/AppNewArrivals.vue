@@ -3,7 +3,7 @@
     import { store } from '../store';
 
     export default {
-        name: 'AppBestSeller',
+        name: 'AppNewArrivals',
         data() {
             return {
                 store,
@@ -18,10 +18,10 @@
 </script>
 
 <template>
-    <section class="w-100">
+    <section class="w-100 pb-5">
         <div class="text-center">
-            <h3 class="font-weight-600">Best Seller</h3>
-            <h6 class="mb-5">Must have products from our top sellers</h6>
+            <h3 class="font-weight-600">New Arrivals</h3>
+            <h6 class="mb-5">Brand new product from top designers</h6>
         </div>
         <div class="my-container d-flex">
             <div class="next">
@@ -31,7 +31,7 @@
                 <font-awesome-icon icon="fa-solid fa-chevron-left" />
             </div>
             <template v-for="element in store.bestSeller">
-                <div v-if="element.visible">
+                <div >
                     <img :src="getImgPath(`${element.img_path}`)" alt="">
                 </div>
             </template>
@@ -45,7 +45,7 @@ h6{
     color: $my-dark-gray;
 }
 .my-container{
-    max-width: fit-content;
+    width: 95%;
     margin: 0 auto;
     position: relative;
 }

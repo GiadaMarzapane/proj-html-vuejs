@@ -112,5 +112,40 @@ export const store = reactive({
                 }
             ]
         }
+    ],
+    bestSeller:[
+        {
+            img_path: '../asset/images/spring_printed_dress-231x300.jpg',
+            visible: true
+        }, {
+            img_path: '../asset/images/black_elegant_leather_jacket-231x300.jpg',
+            visible: true
+        }, {
+            img_path: '../asset/images/black_leather_jacket-231x300.jpg',
+            visible: true
+        }, {
+            img_path: '../asset/images/blue_leather_jacket-231x300.jpg',
+            visible: true
+        }, {
+            img_path: '../asset/images/hipster_black_top-231x300.jpg',
+            visible: false
+        }, {
+            img_path: '../asset/images/leather_gloves-231x300.jpg',
+            visible: false
+        }, {
+            img_path: '../asset/images/modern_leather_boots-231x300.jpg',
+            visible: false
+        }
+    ],
+    opinions: [
+        {
+            img_path: '../asset/images/man_testimonial.png',
+            name: 'Dario Pineda',
+            comment: 'Curabitur non tristique tortor. Vestibulum aliquet suscipit ipsum in volutpat. Donec vel lacinia sem, vitae semper nulla.In hac habitasse platea dictumst.Mauris consectetur est et nibh sadip hendrerit bendum.',
+        }, {
+            img_path: '../asset/images/woman_testimonial.png',
+            name: 'Maria Salvador',
+            comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisl sit amet tortor tempus, nec ultricies lacus commodo. Praesent non tellus volutpat mi congue.',
+        }
     ]
 })
