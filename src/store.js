@@ -19,5 +19,18 @@ export const store = reactive({
             button: 'view more',
             img_path: '../asset/images/autumn_collection_bg.jpg'
         }
+    ],
+    infoCard:[
+        {
+            title: '70% Off',
+            caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat?',
+            button: 'view more',
+            img_path: '../asset/images/promo_box_1_bg.jpg'
+        }, {
+            title: 'Free Shipping',
+            caption: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat?',
+            button: 'view more',
+            img_path: '../asset/images/promo_box_2_bg.jpg'
+        }
     ]
 })

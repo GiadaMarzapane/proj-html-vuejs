@@ -1,13 +1,26 @@
 <script>
+import AppCollection from './AppCollection.vue';
+import AppMiddleSection from './AppMiddleSection.vue';
     
     export default{
-        name: 'AppMain'
+        name: 'AppMain',
+        components: {
+            AppCollection,
+            AppMiddleSection
+        }
     }
 
 </script>
 
 <template>
-    <h1>Main</h1>
+    
+    <!-- FEATURED PRODUCTS -->
+    <section>
+    </section>
+    <!-- COLLECTION -->
+    <AppCollection />
+    <AppMiddleSection />
+
 </template>
 
 <style lang="scss" scoped>

@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="pb-5">
         <section class="border-bottom">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="flex-grow-1 pt-2 pb-2">
@@ -22,8 +22,8 @@ export default {
                     <font-awesome-icon icon="fa-brands fa-youtube" class="text-secondary" />
                 </div>
                 <div>
-                    <a class="text-decoration-none border-end p-2 text-secondary" href="#">Shopping Cart</a>
-                    <a class="text-decoration-none border-end p-2 text-secondary" href="#">My Account
+                    <a class="text-decoration-none border-end pt-2 pb-2 pe-3 ps-3 text-secondary" href="#">Shopping Cart</a>
+                    <a class="text-decoration-none border-end pt-2 pb-2 pe-3 ps-3 text-secondary" href="#">My Account
                         <font-awesome-icon icon="fa-solid fa-chevron-down" />
                     </a>
                 </div>
@@ -123,10 +123,10 @@ ul {
             > h1 {
                 font-size: 55px;
                 font-weight: 700;
-                letter-spacing: 2px;
+                letter-spacing: $letter-spacing;
             }
             > p{
-                letter-spacing: 2px;
+                letter-spacing: $letter-spacing;
             }
         }
     }
