@@ -32,6 +32,7 @@
                 <ul class="list-group list-group-horizontal">
                     <li v-for="element, index in store.featuredProducts"
                     class="list-group-item text-capitalize"
+                    :class="(activeSection != index) ? 'not-active' : ''"
                     @click="activeCollection(index)">
                     {{ element.section }}
                     </li>
@@ -53,11 +54,14 @@
 </template>
 
 <style lang="scss" scoped>
-    .choice{
+.choice{
         max-width: fit-content;
         margin: 0 auto;
     }
     .not-active{
-        background-color: $my-light-gray;
+        background-color: $my-second-white;
+    }
+    li.list-group-item:hover{
+        cursor: pointer;
     }
 </style>
