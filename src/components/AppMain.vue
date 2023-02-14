@@ -2,13 +2,15 @@
 import AppCollection from './AppCollection.vue';
 import AppMiddleSection from './AppMiddleSection.vue';
 import AppFeaturedProducts from './AppFeaturedProducts.vue';
+import AppBestSeller from './AppBestSeller.vue';
     
     export default{
         name: 'AppMain',
         components: {
             AppCollection,
             AppMiddleSection,
-            AppFeaturedProducts
+            AppFeaturedProducts,
+            AppBestSeller
         }
     }
 
@@ -16,13 +18,10 @@ import AppFeaturedProducts from './AppFeaturedProducts.vue';
 
 <template>
     
-    <!-- FEATURED PRODUCTS -->
-    <section>
-    </section>
-    <!-- COLLECTION -->
     <AppFeaturedProducts />
     <AppCollection />
     <AppMiddleSection />
+    <AppBestSeller />
 
 </template>
 

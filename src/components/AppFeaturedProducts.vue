@@ -15,7 +15,6 @@
                 return new URL(myPath, import.meta.url).href
             },
             activeCollection(i){
-                console.log('click su', i)
                 return this.activeSection = i;
             }
         }
@@ -47,7 +46,7 @@
                         <p class="mb-0 mt-3 size-75 font-weight-600">{{element.title}}</p>
                         <span class="size-7">{{element.info}}</span>
                         <div>
-                            <span v-if="activeSection == 0" class="text-decoration-line-through text-primary size-7 pe-2">{{ element.original_price }}</span>
+                            <span class="text-decoration-line-through text-primary size-7">{{ element.original_price }} </span>
                             <span class="text-primary size-75">{{ element.current_price }}</span>
                         </div>
                     </div>

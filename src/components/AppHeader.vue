@@ -67,13 +67,13 @@ export default {
                 <button class="text-uppercase my-btn-transparent">lookbook</button>
             </div>
             <div>
-                <div class="header-tag">
+                <div class="header-tag d-flex justify-content-center align-items-center text-center">
                     <div>
                         <img src="../asset/images/image.png" alt="">
                         <span>Demos</span>
                     </div>
                 </div>
-                <div class="header-tag">
+                <div class="header-tag d-flex justify-content-center align-items-center text-center">
                     <div>
                         <p class="mb-1">
                             <sup>$</sup>
@@ -142,12 +142,8 @@ ul {
     }
 
     .header-tag{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 50px;
         width: 50px;
-        text-align: center;
         background: white;
         border-radius: 5px;
         padding: 5px;
