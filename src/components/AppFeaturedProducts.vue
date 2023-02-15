@@ -46,8 +46,33 @@
 
             <div :id="store.featuredProducts[activeSection].section"
             class="d-flex justify-content-center my-product">
-                <div v-for="element in store.featuredProducts[activeSection].card_info">
-                    <img :src="getImgPath(`${element.img_path}`)" alt="">
+                <div class=" card-img p-2" v-for="element in store.featuredProducts[activeSection].card_info">
+                    <div class="position-relative">
+                        <div class="overlay position-absolute justify-content-center align-items-center text-light">
+                            <div>
+                                <h5 class="size-75">
+                                    <strong>
+                                        {{element.title}}
+                                    </strong>
+                                </h5>
+                                <p class="size-75">{{element.info}}</p>
+                                <p class="size-75">
+                                    {{ element.current_price }}
+                                </p>
+                            </div>
+                            <div class="cart position-absolute">
+                                <span class="size-7">
+                                    <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+                                    Add to Cart</span>
+                            </div>
+                            <div class="details position-absolute">
+                                <span class="size-7">
+                                    <font-awesome-icon icon="fa-solid fa-list-ul" />
+                                    Details</span>
+                            </div>
+                        </div>
+                        <img :src="getImgPath(`${element.img_path}`)" alt="">
+                    </div>
                     <div class="text-start">
                         <p class="mb-0 mt-3 size-75 font-weight-600">{{element.title}}</p>
                         <span class="size-7">{{element.info}}</span>
@@ -69,6 +94,38 @@
 h6{
     font-size: 0.75rem;
     color: $my-dark-gray;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(66, 126, 209, 0.8) 25%, rgba(240, 150, 186, 0.8) 75%);
+    top: 0;
+    left: 0;
+    display: none;
+    .fa-fa-cart-shopping, .fa-list-ul{
+        height: 0.5rem;
+    }
+    .cart, .details{
+        bottom: 10px
+    }
+    .cart{
+        left: 15px;
+    }
+    .details{
+        right: 15px;
+    }
+    .cart:hover, .details:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.card-img{
+    max-width: fit-content;
+    cursor: pointer;
+    &:hover .overlay {
+        display: flex;
+    }
 }
 .choice{
         max-width: fit-content;

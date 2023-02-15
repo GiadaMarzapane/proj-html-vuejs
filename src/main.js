@@ -12,6 +12,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faListUl } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faCopyright } from '@fortawesome/free-regular-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -28,7 +29,8 @@ library.add(faFacebook,
     faStar,
     faCopyright,
     faMagnifyingGlass,
-    faEnvelope)
+    faEnvelope,
+    faListUl)
 
 
 createApp(App)

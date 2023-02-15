@@ -113,36 +113,4 @@ ul {
             }
         }
     }
-
-    // section:nth-of-type(3){
-    //     position: relative;
-
-    //     >div:last-of-type{
-    //         position: absolute;
-    //         top: -10px;
-    //         right: 10px;
-    //     }
-    // }
-
-    // .header-tag{
-    //     height: 50px;
-    //     width: 50px;
-    //     background: white;
-    //     border-radius: 5px;
-    //     padding: 5px;
-    //     font-size: 10px;
-    //     margin-bottom: 5px;
-    //     line-height: 10px;
-    //     &:first-of-type{
-    //         box-shadow: 0px -2px 5px 0px #ababab;
-    //     }
-    //     p{
-    //         color: #89cc9a;
-    //         font-size: 18px;
-    //         font-weight: 600;
-    //     }
-    //     sup{
-    //         letter-spacing: -5px;
-    //     }
-    //     }
 </style>
