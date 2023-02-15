@@ -18,7 +18,12 @@
 </script>
 
 <template>
-    <section class="w-100 pb-5">
+    <section class="w-100 py-5 position-relative">
+        <div class="line">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+        </div>
         <div class="text-center">
             <h3 class="font-weight-600">New Arrivals</h3>
             <h6 class="mb-5">Brand new product from top designers</h6>

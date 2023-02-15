@@ -29,38 +29,39 @@
 </script>
 
 <template>
-    <section>
+    <section class="py-5">
         <div class="opinion-div d-flex justify-content-center align-items-center text-white text-center">
-            <div class="content">
-                    <template v-for="element, index in store.opinions">
-                        <div v-if="index == currentOpinion">
-                            <img :src="getImgPath(`${store.opinions[currentOpinion].img_path}`)" alt="">
-                            <p class="size-7 pt-3 pb-2">
-                                <em>{{ store.opinions[currentOpinion].comment }}</em>
-                            </p>
-                            <p class="size-7">
-                                <strong>{{store.opinions[currentOpinion].name}}, </strong>
-                                <span>Theme Fusion</span>
-                            </p>
-                        </div>
-                    </template>
+            <div class="w-50">
+                <div class="content">
+                        <template v-for="element, index in store.opinions">
+                            <div v-if="index == currentOpinion">
+                                <img :src="getImgPath(`${store.opinions[currentOpinion].img_path}`)" alt="">
+                                <p class="size-7 pt-3 pb-2">
+                                    <em>{{ store.opinions[currentOpinion].comment }}</em>
+                                </p>
+                                <p class="size-7">
+                                    <strong>{{store.opinions[currentOpinion].name}}, </strong>
+                                    <span>Theme Fusion</span>
+                                </p>
+                            </div>
+                        </template>
                 </div>
                 <div class="commands">
                     <div class="male-test me-1" :class="(currentOpinion == 0) ? 'active' : ''" @click="changeOpinionMale"></div>
                     <div class="female-test" :class="(currentOpinion == 1) ? 'active' : ''" @click="changeOpinionFemale"></div>
                 </div>
+            </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
 .opinion-div{
-    height: 65vh;
+    height: 75vh;
     background-image: url('../asset/images/testimonials_home_1_bg.jpg');
     background-size: cover;
     position: relative;
-    >div.content{
-        max-width: 50%;
+    div.content{
         height: 80%;
         margin: 0 auto;
         letter-spacing: $letter-spacing;

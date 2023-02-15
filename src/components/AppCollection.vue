@@ -20,8 +20,7 @@ export default {
 
 <template>
 
-    <section class="pt-5 pb-5">
-
+    <section class="py-5">
         <div class="w-100 h-100 d-flex justify-content-center align-items-center">
             <div class="card-collection position-relative"
                 v-for="element in store.collection">
@@ -33,7 +32,6 @@ export default {
                 </div>
             </div>
         </div>
-
     </section>
 
 </template>

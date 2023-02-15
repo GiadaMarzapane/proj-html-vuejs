@@ -22,8 +22,13 @@
 </script>
 
 <template>
-    <section>
-        <div class="text-center">
+    <section class="w-100 py-5 position-relative">
+        <div class="line">
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
+        </div>
+        <div class="text-center w-75 mx-auto">
             <h3 class="font-weight-600">Featured Products</h3>
             <h6 class="mb-5">Must have products from our top sellers</h6>
     
@@ -52,7 +57,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 </template>

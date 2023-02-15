@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <header class="pb-5">
+    <header class="w-100 pb-5">
         <section class="border-bottom">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="flex-grow-1 pt-2 pb-2">

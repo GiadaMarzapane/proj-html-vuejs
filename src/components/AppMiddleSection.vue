@@ -20,7 +20,7 @@ export default {
 
 <template>
 
-    <section class="pt-5 pb-5">
+    <section class="py-5 w-100">
 
         <div class="bg-image w-100 h-100 d-flex justify-content-center align-items-center p-5">
             <div class="card-info me-4 position-relative"

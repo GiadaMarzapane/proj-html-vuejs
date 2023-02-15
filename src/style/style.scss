@@ -49,3 +49,31 @@ $letter-spacing: 2px;
     padding: 7px 20px;
     font-size: 0.75rem;
 }
+
+// line
+
+.line{
+    width: 75%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 13%;
+    >div{
+        display: inline-block;
+        height: 100%;
+        width: calc(100% / 3);
+        position: absolute;
+    }
+    .line-one{
+        background: $my-light-gray;
+    }
+    .line-two{
+        background: transparent;
+        left: calc(100% / 3);
+    }
+    .line-three{
+        background: $my-light-gray;
+        right: 0;
+    }
+}
