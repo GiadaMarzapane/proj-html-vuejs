@@ -165,5 +165,12 @@ export const store = reactive({
             content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis delectus minus ratione at corrupti?',
             img_path: '../asset/images/post_img_12-300x188.jpg'
         }
+    ],
+    brandLogo: [
+        '../asset/images/b_logotype_1.png',
+        '../asset/images/b_logotype_2.png',
+        '../asset/images/b_logotype_3.png',
+        '../asset/images/b_logotype_4.png',
+        '../asset/images/b_logotype_5.png'
     ]
 })

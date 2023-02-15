@@ -26,7 +26,7 @@ $letter-spacing: 2px;
     font-weight: 600;
 }
 .size-7{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 .size-75 {
     font-size: 0.75rem;
@@ -64,9 +64,11 @@ $letter-spacing: 2px;
         height: 100%;
         width: calc(100% / 3);
         position: absolute;
+        top: 0;
     }
     .line-one{
         background: $my-light-gray;
+        left: 0;
     }
     .line-two{
         background: transparent;

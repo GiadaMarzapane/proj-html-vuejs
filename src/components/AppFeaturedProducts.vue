@@ -29,9 +29,10 @@
             <div class="line-three"></div>
         </div>
         <div class="text-center w-75 mx-auto">
-            <h3 class="font-weight-600">Featured Products</h3>
-            <h6 class="mb-5">Must have products from our top sellers</h6>
-    
+            <div>
+                <h3 class="font-weight-600">Featured Products</h3>
+                <h6 class="mb-5">Must have products from our top sellers</h6>
+            </div>
             <div class="choice mb-5">
                 <ul class="list-group list-group-horizontal">
                     <li v-for="element, index in store.featuredProducts"
@@ -62,6 +63,9 @@
 </template>
 
 <style lang="scss" scoped>
+.line{
+    top: 10% !important;
+}
 h6{
     font-size: 0.75rem;
     color: $my-dark-gray;
