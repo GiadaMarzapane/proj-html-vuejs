@@ -40,7 +40,7 @@ export default {
                     <img class="img-fluid" src="../asset/images/classic_shop_logo_footer.png" alt="">
                 </div>
                 <div>
-                    <p class="size-7">
+                    <p class="size-7 my-l-h">
                         12345 North Main Street,
                         <br>
                         New York, NY 55555
@@ -160,6 +160,9 @@ export default {
         }
         .fa-star{
             color: $my-blue;
+        }
+        .my-l-h{
+            line-height: 20px;
         }
         .lorem{
             cursor: pointer;
