@@ -14,11 +14,13 @@
             getImgPath(myPath){
                 return new URL(myPath, import.meta.url).href
             },
-            changeOpinion(){
+            changeOpinionMale(){
                 if (this.currentOpinion != 0) {
                     return this.currentOpinion = 0
                 }
-                else{
+            },
+            changeOpinionFemale() {
+                if (this.currentOpinion == 0) {
                     return this.currentOpinion = 1
                 }
             }
@@ -44,8 +46,8 @@
                     </template>
                 </div>
                 <div class="commands">
-                    <font-awesome-icon class="me-2" @click="changeOpinion" icon="fa-solid fa-circle" />
-                    <font-awesome-icon @click="changeOpinion" icon="fa-regular fa-circle" />
+                    <div class="male-test me-1" :class="(currentOpinion == 0) ? 'active' : ''" @click="changeOpinionMale"></div>
+                    <div class="female-test" :class="(currentOpinion == 1) ? 'active' : ''" @click="changeOpinionFemale"></div>
                 </div>
         </div>
     </section>
@@ -72,6 +74,16 @@
         left: 50%;
         transform: translateX(-50%);
         cursor: pointer;
+        .male-test, .female-test{
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .active{
+            background-color: white;
+        }
     }
 }
 </style>
