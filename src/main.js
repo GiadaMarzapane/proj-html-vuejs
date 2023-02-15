@@ -14,9 +14,8 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faCopyright } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { faCircle as fasCircle} from '@fortawesome/free-solid-svg-icons'
-import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons'
 
 library.add(faFacebook,
     faTwitter,
@@ -29,8 +28,7 @@ library.add(faFacebook,
     faStar,
     faCopyright,
     faMagnifyingGlass,
-    fasCircle,
-    farCircle)
+    faEnvelope)
 
 
 createApp(App)

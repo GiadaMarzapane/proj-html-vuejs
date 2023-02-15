@@ -18,13 +18,13 @@
 </script>
 
 <template>
-    <section class="w-100 py-5 position-relative">
-        <div class="line">
-            <div class="line-one"></div>
-            <div class="line-two"></div>
-            <div class="line-three"></div>
-        </div>
-        <div class="text-center">
+    <section class="w-100 py-5 ">
+        <div class="text-center position-relative">
+            <div class="line">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
             <h3 class="font-weight-600">New Arrivals</h3>
             <h6 class="mb-5">Brand new products from top designers</h6>
         </div>
