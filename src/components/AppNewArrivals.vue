@@ -7,12 +7,21 @@
         data() {
             return {
                 store,
+                activeSlides: 0
             }
         },
         methods:{
             getImgPath(myPath){
                 return new URL(myPath, import.meta.url).href
             },
+            changeSlides() {
+                if (this.activeSlides == 0) {
+                    return this.activeSlides = 1;
+                }
+                else {
+                    return this.activeSlides = 0;
+                }
+            }
         }
     }
 </script>
@@ -29,13 +38,13 @@
             <h6 class="mb-5">Brand new products from top designers</h6>
         </div>
         <div class="my-container d-flex">
-            <div class="next">
+            <div class="next" @click="changeSlides">
                 <font-awesome-icon icon="fa-solid fa-chevron-right" />
             </div>
-            <div class="previous">
+            <div class="previous" @click="changeSlides">
                 <font-awesome-icon icon="fa-solid fa-chevron-left" />
             </div>
-            <template v-for="element in store.bestSeller">
+            <template v-for="element in store.bestSeller[activeSlides].group">
                 <div >
                     <img :src="getImgPath(`${element.img_path}`)" alt="">
                 </div>

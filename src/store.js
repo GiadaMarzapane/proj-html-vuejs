@@ -114,28 +114,33 @@ export const store = reactive({
         }
     ],
     bestSeller:[
-        {
-            img_path: '../asset/images/spring_printed_dress-231x300.jpg',
-            visible: true
-        }, {
+        { group: [
+            {
+                img_path: '../asset/images/spring_printed_dress-231x300.jpg',
+            }, {
             img_path: '../asset/images/black_elegant_leather_jacket-231x300.jpg',
-            visible: true
-        }, {
-            img_path: '../asset/images/black_leather_jacket-231x300.jpg',
-            visible: true
-        }, {
-            img_path: '../asset/images/blue_leather_jacket-231x300.jpg',
-            visible: true
-        }, {
-            img_path: '../asset/images/hipster_black_top-231x300.jpg',
-            visible: false
-        }, {
-            img_path: '../asset/images/leather_gloves-231x300.jpg',
-            visible: false
-        }, {
-            img_path: '../asset/images/modern_leather_boots-231x300.jpg',
-            visible: false
-        }
+            }, {
+                img_path: '../asset/images/black_leather_jacket-231x300.jpg',
+            }, {
+                img_path: '../asset/images/blue_leather_jacket-231x300.jpg',
+            }, {
+                img_path: '../asset/images/hipster_black_top-231x300.jpg',
+            }
+        ]},
+        { group: [
+            {
+                img_path: '../asset/images/blue_leather_jacket-231x300.jpg',
+            }, {
+                img_path: '../asset/images/hipster_black_top-231x300.jpg',
+            }, {
+                img_path: '../asset/images/leather_gloves-231x300.jpg',
+            }, {
+                img_path: '../asset/images/modern_leather_boots-231x300.jpg',
+            },
+            {
+                img_path: '../asset/images/spring_printed_dress-231x300.jpg',
+            }
+            ]}
     ],
     opinions: [
         {
