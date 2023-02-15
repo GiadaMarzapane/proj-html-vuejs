@@ -87,7 +87,7 @@ export default {
                 </p>
             </div>
             <div>
-                <img src="../asset/images/payment_cards_footer.png" alt="">
+                <img class="img-fluid" src="../asset/images/payment_cards_footer.png" alt="">
             </div>
         </div>
     </section>
@@ -130,6 +130,7 @@ export default {
         }
         p.lorem{
             border-bottom: 1px solid $my-dark-gray;
+            cursor: pointer;
         }
         .tag-footer{
             border: 1px solid $my-dark-gray;

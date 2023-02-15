@@ -55,7 +55,7 @@ export const store = reactive({
                     current_price: '$580',
                     img_path: '../asset/images/blue_jacket_and_white_stripe_tee-200x260.jpg'
                 }, {
-                    title: 'Modern Black Leather Suit',
+                    title: 'Blue Leather Jacket',
                     info: 'Men, Jackets',
                     current_price: '$96',
                     img_path: '../asset/images/blue_leather_jacket-200x260.jpg'
@@ -196,5 +196,42 @@ export const store = reactive({
         'Warm',
         'white',
         'winter',
+    ],
+    littleImgs: [
+        {
+            name_product: 'Spring Printed Dress',
+            rate: 5,
+            current_price: '$47',
+            img_path: '../asset/images/spring_printed_dress-120x156.jpg'
+        }, {
+            name_product: 'Black Leather Jacket',
+            rate: 4,
+            original_price: '$235',
+            current_price: '$200',
+            img_path: '../asset/images/black_elegant_leather_jacket-120x156.jpg'
+        }, {
+            name_product: 'Black Jacket',
+            current_price: '$120',
+            img_path: '../asset/images/black_leather_jacket-120x156.jpg'
+        }, {
+            name_product: 'Blue Leather Jacket',
+            original_price: '$80',
+            current_price: '$60',
+            img_path: '../asset/images/blue_leather_jacket-120x156.jpg'
+        }, {
+            name_product: 'Hipster Balck Top',
+            current_price: '$57',
+            img_path: '../asset/images/hipster_black_top-120x156.jpg'
+        }, {
+            name_product: 'Leather Gloves',
+            rate: 5,
+            current_price: '$45',
+            img_path: '../asset/images/leather_gloves-120x156'
+        }, {
+            name_product: 'Modern Leather Boots',
+            original_price: '$50',
+            current_price: '$30',
+            img_path: '../asset/images/leather_gloves-120x156'
+        }
     ]
 })
