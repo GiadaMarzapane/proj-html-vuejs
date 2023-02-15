@@ -26,7 +26,7 @@
         </div>
         <div class="text-center">
             <h3 class="font-weight-600">New Arrivals</h3>
-            <h6 class="mb-5">Brand new product from top designers</h6>
+            <h6 class="mb-5">Brand new products from top designers</h6>
         </div>
         <div class="my-container d-flex">
             <div class="next">

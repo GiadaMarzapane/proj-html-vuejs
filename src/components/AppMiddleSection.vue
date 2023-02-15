@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 section{
-        height: 70vh;
+        height: 75vh;
         >div.bg-image{
             background-image: url('../asset/images/bkgd_confetti-compressor.jpg');
             background-size: cover;

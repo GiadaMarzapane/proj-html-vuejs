@@ -66,23 +66,6 @@ export default {
                 <button class="text-uppercase me-2 my-btn-transparent">view all</button>
                 <button class="text-uppercase my-btn-transparent">lookbook</button>
             </div>
-            <div>
-                <div class="header-tag d-flex justify-content-center align-items-center text-center">
-                    <div>
-                        <img src="../asset/images/image.png" alt="">
-                        <span>Demos</span>
-                    </div>
-                </div>
-                <div class="header-tag d-flex justify-content-center align-items-center text-center">
-                    <div>
-                        <p class="mb-1">
-                            <sup>$</sup>
-                            39
-                        </p>
-                        <span>On Sale</span>
-                    </div>
-                </div>
-            </div>
         </section>
     </header>
 </template>
@@ -131,35 +114,35 @@ ul {
         }
     }
 
-    section:nth-of-type(3){
-        position: relative;
+    // section:nth-of-type(3){
+    //     position: relative;
 
-        >div:last-of-type{
-            position: absolute;
-            top: -10px;
-            right: 10px;
-        }
-    }
+    //     >div:last-of-type{
+    //         position: absolute;
+    //         top: -10px;
+    //         right: 10px;
+    //     }
+    // }
 
-    .header-tag{
-        height: 50px;
-        width: 50px;
-        background: white;
-        border-radius: 5px;
-        padding: 5px;
-        font-size: 10px;
-        margin-bottom: 5px;
-        line-height: 10px;
-        &:first-of-type{
-            box-shadow: 0px -2px 5px 0px #ababab;
-        }
-        p{
-            color: #89cc9a;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        sup{
-            letter-spacing: -5px;
-        }
-        }
+    // .header-tag{
+    //     height: 50px;
+    //     width: 50px;
+    //     background: white;
+    //     border-radius: 5px;
+    //     padding: 5px;
+    //     font-size: 10px;
+    //     margin-bottom: 5px;
+    //     line-height: 10px;
+    //     &:first-of-type{
+    //         box-shadow: 0px -2px 5px 0px #ababab;
+    //     }
+    //     p{
+    //         color: #89cc9a;
+    //         font-size: 18px;
+    //         font-weight: 600;
+    //     }
+    //     sup{
+    //         letter-spacing: -5px;
+    //     }
+    //     }
 </style>

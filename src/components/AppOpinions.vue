@@ -57,7 +57,7 @@
 
 <style lang="scss" scoped>
 .opinion-div{
-    height: 75vh;
+    height: 70vh;
     background-image: url('../asset/images/testimonials_home_1_bg.jpg');
     background-size: cover;
     position: relative;
@@ -66,7 +66,7 @@
         margin: 0 auto;
         letter-spacing: $letter-spacing;
         p {
-            line-height: 1.5rem;
+            line-height: 1.2rem;
         }
     }
     div.commands{
