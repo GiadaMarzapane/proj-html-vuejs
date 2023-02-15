@@ -46,7 +46,7 @@ export default {
                 </div>
             </div>
         </section>
-        <section class="py-4">
+        <section class="py-5">
             <div class="w-75 mx-auto d-flex">
                 <div class="w-25 d-flex flex-column px-4">
                     <div>

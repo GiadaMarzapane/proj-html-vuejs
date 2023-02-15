@@ -14,7 +14,7 @@ export default {
 <template>
     <header class="w-100 pb-5">
         <section class="border-bottom">
-            <div class="container d-flex justify-content-between align-items-center">
+            <div class="w-75 container d-flex justify-content-between align-items-center">
                 <div class="flex-grow-1 pt-2 pb-2">
                     <font-awesome-icon icon="fa-brands fa-facebook" class="me-3 text-secondary" />
                     <font-awesome-icon icon="fa-brands fa-twitter" class="me-3 text-secondary" />
@@ -37,13 +37,13 @@ export default {
             </div>
         </section>
         <section>
-            <div class="container d-flex justify-content-between align-items-center">
-                <div>
+            <div class="w-75 container d-flex justify-content-between align-items-baseline">
+                <div class="align-self-center">
                     <img src="../asset/images/classic_shop_logo1x.png" alt="logo">
                 </div>
-                <div>
-                    <ul class="d-flex">
-                        <li v-for="(element, index) in store.mainNav" class="me-5" :class="(index == 0) ? 'active' : '' ">
+                <div class="flex-grow-1">
+                    <ul class="d-flex justify-content-end">
+                        <li v-for="(element, index) in store.mainNav" class="me-4" :class="(index == 0) ? 'active' : '' ">
                             <a href="#" class="text-capitalize text-decoration-none" :class="(index == 0) ? 'active' : 'text-secondary' ">
                                 {{ element }}
                                 <font-awesome-icon icon="fa-solid fa-chevron-down" v-if="index != 4" />
@@ -52,7 +52,7 @@ export default {
                     </ul>
                 </div>
                 <div>
-                    <button class="my-btn text-uppercase">Shop now!</button>
+                    <button class="my-btn text-uppercase me-3">Shop now!</button>
                 </div>
                 <div>
                     <font-awesome-icon icon="fa-solid fa-magnifying-glass" />

@@ -135,7 +135,7 @@ export default {
 
 <style lang="scss" scoped>
 .subscribe{
-        background-color: rgb(40, 40, 40);
+        background-color: #303337;
         .envelope{
             height: 50px;
             width: 50px;

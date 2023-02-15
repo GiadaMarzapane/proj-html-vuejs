@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 section{
-        height: 70vh;
+        height: 90vh;
     }
     .card-collection{
         height: 100%;
