@@ -1,5 +1,6 @@
 <script>
 import { store } from '../store';
+import ProductCard from './ProductCard.vue'
 
 export default {
     name: 'AppFooter',
@@ -7,6 +8,9 @@ export default {
         return {
             store,
         }
+    },
+    components: {
+        ProductCard
     },
     methods: {
         getImgPath(myPath) {
@@ -64,7 +68,13 @@ export default {
                     <h6 class="size-7 text-uppercase">top rated products</h6>
                 </div>
                 <div>
-                    <div class="d-flex justify-content-between align-items-center my-border-bottom py-2" v-for="element in store.littleImgs.slice(0, 3)">
+                    <ProductCard v-for="element in store.littleImgs.slice(0, 3)" 
+                    :name_product="element.name_product"
+                    :rate="element.rate"
+                    :original_price="element.original_price"
+                    :current_price="element.current_price"
+                    :img="element.img_path"/>
+                    <!-- <div class="d-flex justify-content-between align-items-center my-border-bottom py-2" v-for="element in store.littleImgs.slice(0, 3)">
                         <div>
                             <p class="size-7 mb-0">{{ element.name_product }}</p>
                             <div class="mb-1">
@@ -84,7 +94,7 @@ export default {
                         <div>
                             <img class="little-img" :src="getImgPath(`${element.img_path}`)" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="w-25 d-flex flex-column px-4">
@@ -155,11 +165,8 @@ export default {
     .product-footer{
         background-color: #2B2E32;
 
-        .fa-chevron-right, .fa-star{
+        .fa-chevron-right{
             height: 0.5rem;
-        }
-        .fa-star{
-            color: $my-blue;
         }
         .my-l-h{
             line-height: 20px;
@@ -172,9 +179,6 @@ export default {
             background-color: transparent;
             width: fit-content;
             color: white;
-        }
-        .little-img{
-            height: 60px;
         }
     }
     .payment{

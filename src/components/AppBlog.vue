@@ -1,6 +1,7 @@
 <script>
 
 import { store } from '../store';
+import ProductCard from './ProductCard.vue'
 
 export default {
     name: 'AppBlog',
@@ -8,6 +9,9 @@ export default {
         return {
             store,
         }
+    },
+    components: {
+        ProductCard
     },
     methods: {
         getImgPath(myPath) {
@@ -42,7 +46,61 @@ export default {
                 </div>
             </div>
         </section>
-        <section class="py-4"></section>
+        <section class="py-4">
+            <div class="w-75 mx-auto d-flex">
+                <div class="w-25 d-flex flex-column px-4">
+                    <div>
+                        <h6 class="size-7 text-uppercase">featured</h6>
+                    </div>
+                    <div>
+                        <ProductCard v-for="element in store.littleImgs.slice(3, 6)"
+                            :name_product="element.name_product"
+                            :rate="element.rate"
+                            :original_price="element.original_price"
+                            :current_price="element.current_price"
+                            :img="element.img_path" />
+                    </div>
+                </div>
+                <div class="w-25 d-flex flex-column px-4">
+                    <div>
+                        <h6 class="size-7 text-uppercase">on sale</h6>
+                    </div>
+                    <div>
+                        <ProductCard v-for="element in store.littleImgs.slice(4, 7)"
+                            :name_product="element.name_product"
+                            :rate="element.rate"
+                            :original_price="element.original_price"
+                            :current_price="element.current_price"
+                            :img="element.img_path" />
+                    </div>
+                </div>
+                <div class="w-25 d-flex flex-column px-4">
+                    <div>
+                        <h6 class="size-7 text-uppercase">top rated</h6>
+                    </div>
+                    <div>
+                        <ProductCard v-for="element in store.littleImgs.slice(0, 3)"
+                            :name_product="element.name_product"
+                            :rate="element.rate"
+                            :original_price="element.original_price"
+                            :current_price="element.current_price"
+                            :img="element.img_path" />
+                    </div>
+                </div>
+                <div class="w-25 d-flex flex-column px-4">
+                    <div>
+                        <h6 class="size-7 text-uppercase">latest reviews</h6>
+                    </div>
+                    <div>
+                        <ProductCard v-for="element in store.littleImgs.slice(4, 7)"
+                            :name_product="element.name_product"
+                            :rate="element.rate"
+                            :admin="'By admin'"
+                            :img="element.img_path" />
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="brand py-4 w-100">
             <div class="w-75 mx-auto text-center">
                 <h6 class="text-uppercase mb-3">
