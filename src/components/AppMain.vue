@@ -5,6 +5,7 @@ import AppFeaturedProducts from './AppFeaturedProducts.vue';
 import AppBestSeller from './AppBestSeller.vue';
 import AppNewArrivals from './AppNewArrivals.vue';
 import AppOpinions from './AppOpinions.vue';
+import AppBlog from './AppBlog.vue';
 
     export default{
         name: 'AppMain',
@@ -14,7 +15,8 @@ import AppOpinions from './AppOpinions.vue';
             AppFeaturedProducts,
             AppBestSeller,
             AppNewArrivals,
-            AppOpinions
+            AppOpinions,
+            AppBlog
         }
     }
 
@@ -28,6 +30,7 @@ import AppOpinions from './AppOpinions.vue';
     <AppMiddleSection />
     <AppNewArrivals />
     <AppOpinions />
+    <AppBlog />
 
 </template>
 

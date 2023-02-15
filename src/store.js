@@ -147,5 +147,23 @@ export const store = reactive({
             name: 'Maria Salvador',
             comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum nisl sit amet tortor tempus, nec ultricies lacus commodo. Praesent non tellus volutpat mi congue.',
         }
+    ],
+    blog:[
+        {
+            title: 'Lorem ipsum dolor sit amet.',
+            date: 'September 17th, 2022 | 3 Comments',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis delectus minus ratione at corrupti?',
+            img_path: '../asset/images/post_img_10-300x188.jpg'
+        }, {
+            title: 'Lorem ipsum dolor sit amet.',
+            date: 'October 17th, 2022 | 4 Comments',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis delectus minus ratione at corrupti?',
+            img_path: '../asset/images/post_img_11-300x188.jpg'
+        }, {
+            title: 'Lorem ipsum dolor sit amet.',
+            date: 'November 17th, 2022 | 5 Comments',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis delectus minus ratione at corrupti?',
+            img_path: '../asset/images/post_img_12-300x188.jpg'
+        }
     ]
 })
