@@ -35,6 +35,10 @@ $letter-spacing: 2px;
     font-size: 0.75rem;
 }
 
+.my-border-bottom{
+    border-bottom: 1px solid $my-dark-gray;
+}
+
 .my-btn {
     border: none;
     background: $my-blue;

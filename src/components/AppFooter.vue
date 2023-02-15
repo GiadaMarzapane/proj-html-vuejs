@@ -7,6 +7,11 @@ export default {
         return {
             store,
         }
+    },
+    methods: {
+        getImgPath(myPath) {
+            return new URL(myPath, import.meta.url).href
+        }
     }
 }
 </script>
@@ -55,12 +60,37 @@ export default {
                 </div>
             </div>
             <div class="w-25 d-flex flex-column px-4">
-                <h6 class="size-7 text-uppercase">top rated products</h6>
+                <div>
+                    <h6 class="size-7 text-uppercase">top rated products</h6>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between align-items-center my-border-bottom py-2" v-for="element in store.littleImgs.slice(0, 3)">
+                        <div>
+                            <p class="size-7 mb-0">{{ element.name_product }}</p>
+                            <div class="mb-1">
+                                <span v-for="index in element.rate">
+                                    <font-awesome-icon icon="fa-solid fa-star" />
+                                </span>
+                            </div>
+                            <p class="size-7 mb-0">
+                                <span class="text-decoration-line-through me-1">
+                                    <strong>{{ element.original_price }}</strong>
+                                </span>
+                                <span class="text-decoration-underline">
+                                    <strong>{{ element.current_price }}</strong>
+                                </span>
+                            </p>
+                        </div>
+                        <div>
+                            <img class="little-img" :src="getImgPath(`${element.img_path}`)" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="w-25 d-flex flex-column px-4">
                 <h6 class="size-7 text-uppercase">recent posts</h6>
                 <div>
-                    <p class="lorem size-7 mb-0 py-2" v-for="element in 6">
+                    <p class="lorem my-border-bottom size-7 mb-0 py-2" v-for="element in 6">
                         <font-awesome-icon class="me-1" icon="fa-solid fa-chevron-right" />
                         Lorem ipsum dolor sit amet.
                     </p>
@@ -125,11 +155,13 @@ export default {
     .product-footer{
         background-color: #2B2E32;
 
-        .fa-chevron-right{
+        .fa-chevron-right, .fa-star{
             height: 0.5rem;
         }
-        p.lorem{
-            border-bottom: 1px solid $my-dark-gray;
+        .fa-star{
+            color: $my-blue;
+        }
+        .lorem{
             cursor: pointer;
         }
         .tag-footer{
@@ -137,6 +169,9 @@ export default {
             background-color: transparent;
             width: fit-content;
             color: white;
+        }
+        .little-img{
+            height: 60px;
         }
     }
     .payment{

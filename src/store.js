@@ -205,12 +205,13 @@ export const store = reactive({
             img_path: '../asset/images/spring_printed_dress-120x156.jpg'
         }, {
             name_product: 'Black Leather Jacket',
-            rate: 4,
+            rate: 3,
             original_price: '$235',
             current_price: '$200',
             img_path: '../asset/images/black_elegant_leather_jacket-120x156.jpg'
         }, {
             name_product: 'Black Jacket',
+            rate: 5,
             current_price: '$120',
             img_path: '../asset/images/black_leather_jacket-120x156.jpg'
         }, {
